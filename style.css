@@ -43,12 +43,6 @@
     color: white;
 }
 
-body 
-{
-    margin: 0px;
-
-}
-
 h1 
 {
     font-size: 90px;
@@ -84,6 +78,7 @@ h2
   
 body
 {
+    margin: 0px;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -152,7 +147,6 @@ section b
 #about{
     font-size:x-large;
 }
-
 .gallery {
     --s: 130px;
     display: grid;
@@ -205,3 +199,9 @@ section b
     transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(45deg);
     --b: 70%;
   }
+
+.song {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
