@@ -3,3 +3,4 @@ ID: 319041208
 github.io link:
 
 Important info:
+when clicking on the logo, the user will be directed to the start of the page.
