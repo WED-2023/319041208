@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Outfit&display=swap');
 
 #navbar 
 {
@@ -195,17 +196,95 @@ section b
     filter: brightness(1);
     pointer-events: initial;
   }
-  .gallery > input:checked {
+  .gallery > input:checked 
+  {
     transform: translateY(calc(1.75*var(--s))) scale(.5) rotate(45deg);
     --b: 70%;
   }
 
-.song {
+.song 
+{
     display: flex;
     justify-content: center; 
     align-items: center;
 }
-#like iframe, #qrcoder img {
+#like iframe, #qrcoder img 
+{
     display: block;    
     margin: auto; 
+}
+
+#contact{
+    background: linear-gradient(#ffdcd8, #fff7f9);
+    margin-left: -10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+.contact-container
+{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h3{ 
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{ 
+   border: none; 
+   width: 120px;
+   height: 5px;
+   background-color: #a363aa;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   margin-left: -5px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 5px;
+    border: none;
+    outline: none;
+    padding: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+   color: #a9a9a9; 
+}
+.contact-left button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px, 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #f46d86);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+/* https://www.youtube.com/watch?v=-HeadgoqJ7A&ab_channel=GreatStack */
 }
