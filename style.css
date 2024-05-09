@@ -205,3 +205,7 @@ section b
     justify-content: center; 
     align-items: center;
 }
+#like iframe, #qrcoder img {
+    display: block;    
+    margin: auto; 
+}
