@@ -7,3 +7,4 @@
 **Important info:**
 - When clicking on the logo, the user will be directed to the start of the page.
 - My grandma didnt want any pictures of herself on the website, so i found some online.
+- The emails are sent to my BGU account: amirrot@post.bgu.ac.il
