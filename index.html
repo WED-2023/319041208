@@ -133,17 +133,40 @@
 <div class="star"><br/></div>
 <h2>contact me</h2>
   <div class="contact-container">
-    <form action="" class="contact-left">
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
       <div class="contact-left-title">
         <h3>Get in touch</h3>
         <hr>
       </div>
+      <input type="hidden" name="access_key" value="ce4ac6ae-ac52-43ce-97e6-ab863387e74c">
       <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
       <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
       <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+      <div id="smileys">
+        <span class="smiley" role="img" aria-label="smile">😊</span>
+        <span class="smiley" role="img" aria-label="laugh">😂</span>
+        <span class="smiley" role="img" aria-label="sad">😢</span>
+        <span class="smiley" role="img" aria-label="love">😍</span>
+        <span class="smiley" role="img" aria-label="think">🤔</span>
+        <span class="smiley" role="img" aria-label="grandma">👵</span>
+      </div>
       <button type="submit">Submit <img src="files\arrow_icon.png" alt=""> </button>
-
     </form>
+    <script>
+      document.querySelectorAll('.smiley').forEach(function(smiley) {
+        smiley.addEventListener('click', function() {
+          var messageBox = document.getElementsByName('message')[0];
+          messageBox.value += " " + smiley.textContent; // Append the smiley to the text area
+          messageBox.focus(); // Optional: Focus the text area after adding a smiley
+        });
+      });
+
+      window.addEventListener('load', function() {
+        document.getElementById('contactForm').reset();
+      });
+    </script>
+      
+
     <div class="contact-right">
       <img src="files\right_img.png" alt="">
     </div>

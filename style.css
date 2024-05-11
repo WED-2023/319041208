@@ -275,7 +275,8 @@ section b
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 15px, 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 16px;
     color: #fff;
     gap: 10px;
@@ -286,5 +287,25 @@ section b
 }
 .contact-left button img{
     height: 15px;
-/* https://www.youtube.com/watch?v=-HeadgoqJ7A&ab_channel=GreatStack */
 }
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+.smiley {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .smiley:hover {
+    opacity: 0.8;
+  }
+  
