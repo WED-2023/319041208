@@ -15,7 +15,8 @@ This personal website project features a multi-section site designed to showcase
 - **About Me**: Detailed personal history and background.
 - **Photo Gallery**: A curated collection of images sourced from the internet, showcasing a variety of themes and subjects.
 - **Music Playlist**: Embedded YouTube video for music playback.
-- **Interactive Like Section**: Facebook like plugin integration.
+- **Interactive Like Section**: Facebook like plugin integration for this website.
+- **QR code**: QR code to this website.
 - **Q&A**: Display of information in a tabular format comparing different web generations.
 - **Contact Form**: A form to get in touch, integrated with Web3Forms for backend processing.
 
