@@ -156,8 +156,8 @@
       document.querySelectorAll('.smiley').forEach(function(smiley) {
         smiley.addEventListener('click', function() {
           var messageBox = document.getElementsByName('message')[0];
-          messageBox.value += " " + smiley.textContent; // Append the smiley to the text area
-          messageBox.focus(); // Optional: Focus the text area after adding a smiley
+          messageBox.value += " " + smiley.textContent;
+          messageBox.focus();
         });
       });
 
